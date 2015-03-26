@@ -1,6 +1,6 @@
 {
   "author": "Sami Laine <laine.j.sami@gmail.com>",
-  "homepage": "https://github.com/samilaine/sjl-socks-toggler",
+  "homepage": "https://github.com/samilaine/sjl-proxy-toggler",
   "icon": "data/icon48.png",
   "icon64": "data/icon48.png",
   "id": "proxy-toggler@sjl.kapsi.fi",
@@ -9,5 +9,5 @@
   "license": "GPL 2.0",
   "name": "sjl-proxy-toggler",
   "title": "SJL's Proxy Toggler",
-  "version": "0.1"
+  "version": "0.1.1"
 }
