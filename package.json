@@ -1,13 +1,57 @@
 {
   "author": "Sami Laine <laine.j.sami@gmail.com>",
+  "description": "Toggles proxy settings between \"Manual\" and whatever was defined in network settings previously.",
+  "fullName": "SJL's Proxy Toggler",
   "homepage": "https://github.com/samilaine/sjl-proxy-toggler",
   "icon": "data/icon48.png",
   "icon64": "data/icon48.png",
   "id": "proxy-toggler@sjl.kapsi.fi",
-  "description": "Toggles proxy settings between \"Manual\" and whatever was defined in network settings previously.",
-  "fullName": "SJL's Proxy Toggler",
   "license": "GPL 2.0",
   "name": "sjl-proxy-toggler",
+  "preferences": [
+    {
+      "name": "proxyStateNotPressed",
+      "title": "Default Proxy State",
+      "description": "The proxy setting to be used when 'Toggle Proxy'-button is not checked ie. when it has not been pressed.",
+      "type": "menulist",
+      "value": 0,
+      "options": [
+        { "value": "0",
+          "name": "noProxy",
+          "label": "No proxy" },
+        { "value": "4",
+          "name": "autoDetect",
+          "label": "Auto-detect proxy settings for this network" },
+        { "value": "5",
+          "name": "systemSettings",
+          "label": "Use system proxy settings" },
+        { "value": "1",
+          "name": "manualProxy",
+          "label": "Manual proxy configuration" }
+      ]
+    },
+    {
+      "name": "proxyStatePressed",
+      "title": "Proxy State when the button is pressed",
+      "description": "The proxy setting to be used when 'Toggle Proxy'-button is checked ie. when it has been pressed.",
+      "type": "menulist",
+      "value": 1,
+      "options": [
+        { "value": "1",
+          "name": "manualProxy",
+          "label": "Manual proxy configuration" },
+        { "value": "0",
+          "name": "noProxy",
+          "label": "No proxy" },
+        { "value": "4",
+          "name": "autoDetect",
+          "label": "Auto-detect proxy settings for this network" },
+        { "value": "5",
+          "name": "systemSettings",
+          "label": "Use system proxy settings" }
+      ]
+    }
+  ],
   "title": "SJL's Proxy Toggler",
-  "version": "0.1.1"
+  "version": "0.2"
 }
